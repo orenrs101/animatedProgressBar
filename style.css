@@ -1,0 +1,46 @@
+.bar {
+    height: 20px;
+    width: 600px;
+    position: relative;
+    background-color: #bcbcbc;
+    border-radius: 10px;
+    /*padding: 3px;*/
+    animation: changeColor 2s infinite;
+}
+
+.progressContainer {
+    display: inline;
+}
+
+.progress {
+    display: block;
+    height: 100%;
+    background-color: #0000f9;
+    width: 0px;
+    animation: progressTheBar 8s infinite;
+    border-radius: 10px;
+}
+
+.greenLine {
+    display: block;
+    height: 90%;
+    width: 4px;
+    background-color: #00ae00;
+    animation: greenLineMovement 2s infinite;
+    left: 0;
+    position: relative;
+}
+
+@keyframes progressTheBar {
+
+    to {
+        width: 600px;
+    }
+}
+
+@keyframes greenLineMovement {
+
+    to {
+        left: 95%;
+    }
+}
